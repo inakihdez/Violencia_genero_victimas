@@ -116,6 +116,19 @@ def crear_query(session):
     }
     resp = _post_con_diagnostico(session, url, data)
     print(f"  >>> Respuesta al crear la consulta: {resp.text[:500]!r}")
+
+    # Verificar que el servidor ya tiene la consulta lista antes de tocar sus ejes
+    # (a veces la creación del objeto en el servidor tarda un instante más que la
+    # respuesta HTTP, y añadir dimensiones demasiado rápido falla con
+    # "Cannot move dimension ... to axis").
+    for intento in range(5):
+        time.sleep(0.5)
+        resp_check = session.get(url, timeout=15)
+        if resp_check.ok:
+            break
+    else:
+        print("  >>> Aviso: no se pudo confirmar que la consulta estuviera lista, se continúa igualmente.")
+
     return query_id
 
 
@@ -161,6 +174,7 @@ def obtener_datos_saiku():
     query_id = crear_query(session)
     for posicion, dim in enumerate(DIMENSIONES):
         anadir_dimension_a_filas(session, query_id, dim, posicion)
+        time.sleep(0.3)
     anadir_medida(session, query_id)
     payload = obtener_resultado(session, query_id)
     return cellset_a_dataframe(payload)
