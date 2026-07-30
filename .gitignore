@@ -1,0 +1,14 @@
+# Variables de entorno con claves reales — NUNCA subir esto al repo
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# NOTA: vg_monitor_estado.json y ViolenciaGeneroOK.csv NO se ignoran aquí a
+# propósito — el workflow los comitea de vuelta al repo para persistir el
+# estado entre ejecuciones. Si los pruebas en local y no quieres que tus
+# pruebas ensucien el repo, bórralos antes de hacer commit o usa "git status"
+# para revisar qué vas a subir.
