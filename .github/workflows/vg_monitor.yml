@@ -25,7 +25,7 @@ jobs:
           python-version: '3.11'
 
       - name: Instalar dependencias
-        run: pip install requests pandas
+        run: pip install -r requirements.txt
 
       - name: Comprobar contador de víctimas
         id: monitor
