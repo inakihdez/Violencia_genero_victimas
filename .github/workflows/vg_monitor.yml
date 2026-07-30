@@ -1,0 +1,61 @@
+name: Monitor víctimas VG + pipeline Saiku
+
+on:
+  schedule:
+    # 11:00, 13:00 y 16:00 UTC
+    - cron: '0 11 * * *'
+    - cron: '0 13 * * *'
+    - cron: '0 16 * * *'
+  workflow_dispatch: {}  # permite lanzarlo manualmente desde la pestaña Actions para probar
+
+permissions:
+  contents: write  # necesario para comitear de vuelta el estado y el CSV actualizados
+
+jobs:
+  monitor_y_pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests pandas
+
+      - name: Comprobar contador de víctimas
+        id: monitor
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python -u vg_monitor_victimas.py
+
+      - name: Comitear estado del monitor
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add vg_monitor_estado.json
+          git diff --quiet --cached || git commit -m "Actualiza estado monitor víctimas VG"
+          git push
+
+      - name: Ejecutar pipeline Saiku (solo si hubo cambio)
+        if: steps.monitor.outputs.cambio == 'true'
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          VG_CONTADOR_ANTERIOR: ${{ steps.monitor.outputs.anterior }}
+          VG_CONTADOR_ACTUAL: ${{ steps.monitor.outputs.actual }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u vg_saiku_pipeline.py
+
+      - name: Comitear CSV actualizado (solo si el pipeline se ejecutó)
+        if: steps.monitor.outputs.cambio == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ViolenciaGeneroOK.csv
+          git diff --quiet --cached || git commit -m "Actualiza ViolenciaGeneroOK.csv (Saiku)"
+          git push
