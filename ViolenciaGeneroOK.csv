@@ -5093,6 +5093,24 @@ España,2026,5,0,Total,Total,Pareja,No contesta,No había denuncia
 España,2026,5,1,Total,Total,Pareja,Sí,Había denuncia
 España,2026,5,0,Total,Total,Pareja,Sí,No consta denuncia
 España,2026,5,2,Total,Total,Pareja,Sí,No había denuncia
+España,2026,10,0,Total,Total,Expareja,No,Había denuncia
+España,2026,10,0,Total,Total,Expareja,No,No consta denuncia
+España,2026,10,1,Total,Total,Expareja,No,No había denuncia
+España,2026,10,0,Total,Total,Expareja,No contesta,Había denuncia
+España,2026,10,0,Total,Total,Expareja,No contesta,No consta denuncia
+España,2026,10,0,Total,Total,Expareja,No contesta,No había denuncia
+España,2026,10,0,Total,Total,Expareja,Sí,Había denuncia
+España,2026,10,0,Total,Total,Expareja,Sí,No consta denuncia
+España,2026,10,0,Total,Total,Expareja,Sí,No había denuncia
+España,2026,10,0,Total,Total,Pareja,No,Había denuncia
+España,2026,10,0,Total,Total,Pareja,No,No consta denuncia
+España,2026,10,0,Total,Total,Pareja,No,No había denuncia
+España,2026,10,0,Total,Total,Pareja,No contesta,Había denuncia
+España,2026,10,0,Total,Total,Pareja,No contesta,No consta denuncia
+España,2026,10,0,Total,Total,Pareja,No contesta,No había denuncia
+España,2026,10,0,Total,Total,Pareja,Sí,Había denuncia
+España,2026,10,0,Total,Total,Pareja,Sí,No consta denuncia
+España,2026,10,1,Total,Total,Pareja,Sí,No había denuncia
 España,2026,9,0,Total,Total,Expareja,No,Había denuncia
 España,2026,9,0,Total,Total,Expareja,No,No consta denuncia
 España,2026,9,0,Total,Total,Expareja,No,No había denuncia
@@ -7658,6 +7676,15 @@ España,2026,5,0,Total,Total,Total,No contesta,No había denuncia
 España,2026,5,2,Total,Total,Total,Sí,Había denuncia
 España,2026,5,0,Total,Total,Total,Sí,No consta denuncia
 España,2026,5,2,Total,Total,Total,Sí,No había denuncia
+España,2026,10,0,Total,Total,Total,No,Había denuncia
+España,2026,10,0,Total,Total,Total,No,No consta denuncia
+España,2026,10,1,Total,Total,Total,No,No había denuncia
+España,2026,10,0,Total,Total,Total,No contesta,Había denuncia
+España,2026,10,0,Total,Total,Total,No contesta,No consta denuncia
+España,2026,10,0,Total,Total,Total,No contesta,No había denuncia
+España,2026,10,0,Total,Total,Total,Sí,Había denuncia
+España,2026,10,0,Total,Total,Total,Sí,No consta denuncia
+España,2026,10,1,Total,Total,Total,Sí,No había denuncia
 España,2026,9,0,Total,Total,Total,No,Había denuncia
 España,2026,9,0,Total,Total,Total,No,No consta denuncia
 España,2026,9,0,Total,Total,Total,No,No había denuncia
@@ -9365,6 +9392,12 @@ España,2026,5,1,Total,Total,Expareja,Total,No había denuncia
 España,2026,5,1,Total,Total,Pareja,Total,Había denuncia
 España,2026,5,0,Total,Total,Pareja,Total,No consta denuncia
 España,2026,5,2,Total,Total,Pareja,Total,No había denuncia
+España,2026,10,0,Total,Total,Expareja,Total,Había denuncia
+España,2026,10,0,Total,Total,Expareja,Total,No consta denuncia
+España,2026,10,1,Total,Total,Expareja,Total,No había denuncia
+España,2026,10,0,Total,Total,Pareja,Total,Había denuncia
+España,2026,10,0,Total,Total,Pareja,Total,No consta denuncia
+España,2026,10,1,Total,Total,Pareja,Total,No había denuncia
 España,2026,9,0,Total,Total,Expareja,Total,Había denuncia
 España,2026,9,0,Total,Total,Expareja,Total,No consta denuncia
 España,2026,9,0,Total,Total,Expareja,Total,No había denuncia
@@ -11069,6 +11102,12 @@ España,2026,5,1,Total,Total,Expareja,Sí,Total
 España,2026,5,0,Total,Total,Pareja,No,Total
 España,2026,5,0,Total,Total,Pareja,No contesta,Total
 España,2026,5,3,Total,Total,Pareja,Sí,Total
+España,2026,10,1,Total,Total,Expareja,No,Total
+España,2026,10,0,Total,Total,Expareja,No contesta,Total
+España,2026,10,0,Total,Total,Expareja,Sí,Total
+España,2026,10,0,Total,Total,Pareja,No,Total
+España,2026,10,0,Total,Total,Pareja,No contesta,Total
+España,2026,10,1,Total,Total,Pareja,Sí,Total
 España,2026,9,0,Total,Total,Expareja,No,Total
 España,2026,9,0,Total,Total,Expareja,No contesta,Total
 España,2026,9,0,Total,Total,Expareja,Sí,Total
@@ -11641,6 +11680,8 @@ España,2026,3,2,Total,Total,Expareja,Total,Total
 España,2026,3,3,Total,Total,Pareja,Total,Total
 España,2026,5,2,Total,Total,Expareja,Total,Total
 España,2026,5,3,Total,Total,Pareja,Total,Total
+España,2026,10,1,Total,Total,Expareja,Total,Total
+España,2026,10,1,Total,Total,Pareja,Total,Total
 España,2026,9,0,Total,Total,Expareja,Total,Total
 España,2026,9,5,Total,Total,Pareja,Total,Total
 España,2003,4,0,Total,Total,Total,No,Total
@@ -12492,6 +12533,9 @@ España,2026,3,3,Total,Total,Total,Sí,Total
 España,2026,5,1,Total,Total,Total,No,Total
 España,2026,5,0,Total,Total,Total,No contesta,Total
 España,2026,5,4,Total,Total,Total,Sí,Total
+España,2026,10,1,Total,Total,Total,No,Total
+España,2026,10,0,Total,Total,Total,No contesta,Total
+España,2026,10,1,Total,Total,Total,Sí,Total
 España,2026,9,0,Total,Total,Total,No,Total
 España,2026,9,0,Total,Total,Total,No contesta,Total
 España,2026,9,5,Total,Total,Total,Sí,Total
@@ -13344,6 +13388,9 @@ España,2026,3,5,Total,Total,Total,Total,No había denuncia
 España,2026,5,2,Total,Total,Total,Total,Había denuncia
 España,2026,5,0,Total,Total,Total,Total,No consta denuncia
 España,2026,5,3,Total,Total,Total,Total,No había denuncia
+España,2026,10,0,Total,Total,Total,Total,Había denuncia
+España,2026,10,0,Total,Total,Total,Total,No consta denuncia
+España,2026,10,2,Total,Total,Total,Total,No había denuncia
 España,2026,9,0,Total,Total,Total,Total,Había denuncia
 España,2026,9,0,Total,Total,Total,Total,No consta denuncia
 España,2026,9,5,Total,Total,Total,Total,No había denuncia
@@ -13630,4 +13677,5 @@ España,2026,7,8,Total,Total,Total,Total,Total
 España,2026,6,3,Total,Total,Total,Total,Total
 España,2026,3,5,Total,Total,Total,Total,Total
 España,2026,5,5,Total,Total,Total,Total,Total
+España,2026,10,2,Total,Total,Total,Total,Total
 España,2026,9,5,Total,Total,Total,Total,Total
